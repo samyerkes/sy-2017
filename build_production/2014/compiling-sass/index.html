@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sam Yerkes, Web Developer #RVA">
+
+    <title>Sam Yerkes </title>
+    
+    <link rel="stylesheet" href="http://jigsaw.dev/css/app.css">
+</head>
+
+<body>
+    
+    <div id="app">
+
+        <section class="hero is-bold">
+          <div class="hero-body">
+            <div class="container">
+                <div class="level">
+                    <div class="level-left">
+                        <div class="level-item">
+                            <h1 class="title">
+                                <a href="http://jigsaw.dev">Sam Yerkes</a>
+                            </h1>
+                        </div>
+                    </div>
+                    <div class="level-right">
+                        <div class="level-item">
+                            <a href="http://jigsaw.dev" class="nav-item">Home</a>
+                            <a href="http://jigsaw.dev/about" class="nav-item">About</a>
+                        </div>
+                    </div>
+                </div>
+              
+            </div>
+          </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="columns">
+                    
+                    <div class="column is-three-quarters">
+                        <div class="content">
+                            
+	<h1 class="title is-1  is-spaced">Compiling Sass</h1>
+	<p class="subtitle is-4">March 10, 2014</p>
+
+	<p>I haven't written a lick of CSS in over a year now because I've been on board the <a href="http://www.sass-lang.com">SASS train</a>. Sometimes I forget you even need semicolons and curly braces in CSS.</p>
+<p>SASS is awesome for a number of reasons, but one feature I always use is @import into a global.sass file. I like to keep my SASS vey modular and organized so this way I know exactly where a property is in case it needs to be updated.</p>
+<p>I usually break out the global.sass file into something similar to this:</p>
+<pre><code>@import 'compass/css3'
+@import '_variables'
+@import '_mixins'
+@import '_base'
+@import '_typography'
+@import '_nav'</code></pre>
+        
+                        </div>
+                    </div>
+                    
+                    <div class="column is-hidden-mobile">
+                        <figure class="image is-square">
+	<img src="http://jigsaw.dev/imgs/swim.jpg" style="border-radius: 50%">
+</figure>                    </div>
+                    
+                </div>    
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="columns">
+                    <div class="column">
+                        <p class="is-small"><strong>Pronounciation help:</strong> Yerkes rhymes with circus</p>
+                    </div>
+                    <div class="column">
+                        <status></status>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+</body>
+
+<script src="https://unpkg.com/vue@2.3.0"></script>
+<script src="https://cdn.jsdelivr.net/vue.resource/1.3.1/vue-resource.min.js"></script>
+<script src="http://jigsaw.dev/js/app.js""></script>
+</html>
