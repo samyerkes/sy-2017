@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sam Yerkes, Web Developer #RVA">
+
+    <title>Sam Yerkes </title>
+    
+    <link rel="stylesheet" href="http://jigsaw.dev/css/app.css">
+</head>
+
+<body>
+    
+    <div id="app">
+
+        <section class="hero is-bold">
+          <div class="hero-body">
+            <div class="container">
+                <div class="level">
+                    <div class="level-left">
+                        <div class="level-item">
+                            <h1 class="title">
+                                <a href="http://jigsaw.dev">Sam Yerkes</a>
+                            </h1>
+                        </div>
+                    </div>
+                    <div class="level-right">
+                        <div class="level-item">
+                            <a href="http://jigsaw.dev" class="nav-item">Home</a>
+                            <a href="http://jigsaw.dev/about" class="nav-item">About</a>
+                        </div>
+                    </div>
+                </div>
+              
+            </div>
+          </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="columns">
+                    
+                    <div class="column is-three-quarters">
+                        <div class="content">
+                            
+	<h1 class="title is-1  is-spaced">A Sassy Link Mixin</h1>
+	<p class="subtitle is-4">March 24, 2014</p>
+
+	<p>Lately I've been trying to get myself to write more @mixins, because I've found they help standardize components in Sass. Last night I wrote this @mixin I believe creates a really good baseline for links in a project.</p>
+<p>It goes a little something like this:</p>
+<pre><code>$link: #e74c3c !default
+
+@mixin link()
+    color: $link
+    text-decoration: none
+    [at]include print
+        &amp;:after
+            content: " ("attr(href)") "
+    &amp;:hover, &amp;:focus
+        color: lighten($link, 15%)
+        text-decoration: underline</code></pre>
+<p>Since moving over to Sass I've been pretty good about writing :hover and :focus states for my links, but I admit it can be tedious. It also hooks into another [at]include print @mixin I've recently begun using for creating a seperate print stylesheet.</p>
+<pre><code>$print: false !default
+
+@mixin print()
+    [at]if $print == true
+        content</code></pre>
+<p>So getting back to the link @mixin, it will display the link url (perfect for printed pages) after the link text, but only if the variable $print: true is in the global stylesheet.</p>
+<p>I would typically use this mixin in a typography.sass file and just declare:</p>
+<pre><code>a
+    [at]include link</code></pre>
+<h3>BOOM</h3>
+        
+                        </div>
+                    </div>
+                    
+                    <div class="column is-hidden-mobile">
+                        <figure class="image is-square">
+	<img src="http://jigsaw.dev/imgs/swim.jpg" style="border-radius: 50%">
+</figure>                    </div>
+                    
+                </div>    
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="columns">
+                    <div class="column">
+                        <p class="is-small"><strong>Pronounciation help:</strong> Yerkes rhymes with circus</p>
+                    </div>
+                    <div class="column">
+                        <status></status>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+</body>
+
+<script src="https://unpkg.com/vue@2.3.0"></script>
+<script src="https://cdn.jsdelivr.net/vue.resource/1.3.1/vue-resource.min.js"></script>
+<script src="http://jigsaw.dev/js/app.js""></script>
+</html>

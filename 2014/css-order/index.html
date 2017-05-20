@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sam Yerkes, Web Developer #RVA">
+
+    <title>Sam Yerkes </title>
+    
+    <link rel="stylesheet" href="http://jigsaw.dev/css/app.css">
+</head>
+
+<body>
+    
+    <div id="app">
+
+        <section class="hero is-bold">
+          <div class="hero-body">
+            <div class="container">
+                <div class="level">
+                    <div class="level-left">
+                        <div class="level-item">
+                            <h1 class="title">
+                                <a href="http://jigsaw.dev">Sam Yerkes</a>
+                            </h1>
+                        </div>
+                    </div>
+                    <div class="level-right">
+                        <div class="level-item">
+                            <a href="http://jigsaw.dev" class="nav-item">Home</a>
+                            <a href="http://jigsaw.dev/about" class="nav-item">About</a>
+                        </div>
+                    </div>
+                </div>
+              
+            </div>
+          </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="columns">
+                    
+                    <div class="column is-three-quarters">
+                        <div class="content">
+                            
+	<h1 class="title is-1  is-spaced">CSS Property Order</h1>
+	<p class="subtitle is-4">March 3, 2014</p>
+
+	<p>I've found my development time speed up significantly in the past year or so. This is in part for a few reasons, like utilizing Sass, Grunt and Git on a daily basis, but one other reason is because I've established a CSS property order that I like and have begun to stick to religiously when writing CSS/SASS. It took a little while to get use to but once I memorized it it became really easy to write that way and then later edit if need be.</p>
+<p>I loosely base the order on a combination of the box model (outside to inside) and then alphabetical order, followed lastly by any SASSy stuff like mixins and extends.</p>
+<p>Here's an abbreviated version:</p>
+<pre><code>display
+position
+top
+right
+bottom
+left
+overflow
+width
+max-width
+height
+max-height
+margin
+padding
+border
+background
+color
+font
+    family
+    size
+text
+    align
+    style
+    transform
+@mixins
+@extend</code></pre>
+<p>Next thing I plan on establishing is ordering html attributes correctly. I really like <a href="https://twitter.com/mdo">@mdo's</a> <a href="http://mdo.github.io/code-guide/">Code Guide</a> so I'll probably look into utilizing some stuff from that into my own.</p>
+        
+                        </div>
+                    </div>
+                    
+                    <div class="column is-hidden-mobile">
+                        <figure class="image is-square">
+	<img src="http://jigsaw.dev/imgs/swim.jpg" style="border-radius: 50%">
+</figure>                    </div>
+                    
+                </div>    
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="columns">
+                    <div class="column">
+                        <p class="is-small"><strong>Pronounciation help:</strong> Yerkes rhymes with circus</p>
+                    </div>
+                    <div class="column">
+                        <status></status>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+</body>
+
+<script src="https://unpkg.com/vue@2.3.0"></script>
+<script src="https://cdn.jsdelivr.net/vue.resource/1.3.1/vue-resource.min.js"></script>
+<script src="http://jigsaw.dev/js/app.js""></script>
+</html>

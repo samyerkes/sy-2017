@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sam Yerkes, Web Developer #RVA">
+
+    <title>Sam Yerkes </title>
+    
+    <link rel="stylesheet" href="http://jigsaw.dev/css/app.css">
+</head>
+
+<body>
+    
+    <div id="app">
+
+        <section class="hero is-bold">
+          <div class="hero-body">
+            <div class="container">
+                <div class="level">
+                    <div class="level-left">
+                        <div class="level-item">
+                            <h1 class="title">
+                                <a href="http://jigsaw.dev">Sam Yerkes</a>
+                            </h1>
+                        </div>
+                    </div>
+                    <div class="level-right">
+                        <div class="level-item">
+                            <a href="http://jigsaw.dev" class="nav-item">Home</a>
+                            <a href="http://jigsaw.dev/about" class="nav-item">About</a>
+                        </div>
+                    </div>
+                </div>
+              
+            </div>
+          </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="columns">
+                    
+                    <div class="column is-three-quarters">
+                        <div class="content">
+                            
+	<h1 class="title is-1  is-spaced">Let&#039;s Encrypt All The Things</h1>
+	<p class="subtitle is-4">November 21, 2016</p>
+
+	<p>One of my least favorite parts about running a web server is maintaining certificates. Although I run a handful of servers all with varying certificates I don’t install new ones frequently enough to where I can do it with my eyes closed but I do install them frequently enough for it to be a pain in the ass each time.</p>
+<p>So today when I decided I wanted to get some SEO gains and run this website over SSL I was half excited and half dreading running through the entire process of buying the cert (a headache in itself depending on the certificate authority) and fiddling with Apache.</p>
+<p>To save myself some money I decided I would forget buying one and try out Let’s Encrypt. I’d read this process could be daunting and complex, but figured it I was going to do it I might as well go all in. To my surprise Digital Ocean (you don’t necessarily need Digital Ocean) has an awesome tutorial on how to install the client and even run an autorenewing cronjob on Ubuntu. The site was secured start to finish in less than 5 minutes, I saved myself roughly about $10 a year and am getting those sweet sweet SEO gains I mentioned.</p>
+<p>Major kudos to everyone who has contributed to Let’s Encrypt, it seems pretty awesome so far.</p>
+        
+                        </div>
+                    </div>
+                    
+                    <div class="column is-hidden-mobile">
+                        <figure class="image is-square">
+	<img src="http://jigsaw.dev/imgs/swim.jpg" style="border-radius: 50%">
+</figure>                    </div>
+                    
+                </div>    
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="columns">
+                    <div class="column">
+                        <p class="is-small"><strong>Pronounciation help:</strong> Yerkes rhymes with circus</p>
+                    </div>
+                    <div class="column">
+                        <status></status>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+</body>
+
+<script src="https://unpkg.com/vue@2.3.0"></script>
+<script src="https://cdn.jsdelivr.net/vue.resource/1.3.1/vue-resource.min.js"></script>
+<script src="http://jigsaw.dev/js/app.js""></script>
+</html>
