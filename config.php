@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'baseUrl' => 'http://jigsaw.dev',
+    'baseUrl' => 'https://samyerkes.com',
     'production' => false,
     'collections' => [
     	'posts' => [
